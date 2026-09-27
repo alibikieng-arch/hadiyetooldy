@@ -1,0 +1,42 @@
+* { box-sizing: border-box; margin:0; padding:0; font-family: 'Vazirmatn', sans-serif; }
+body { background:#fff; overflow:hidden; }
+.scene { position:relative; width:100vw; height:100vh; background:linear-gradient(#f8e8e8,#f0d8f0); overflow:hidden; }
+
+.cat {
+  position:absolute; bottom:15%; left:10%; width:180px; height:180px;
+  background: url('https://picsum.photos/id/1015/300/300') center/cover;
+  border-radius:50%; animation: runCat 4s infinite alternate ease-in-out;
+}
+
+.gift-box {
+  position:absolute; top:28%; left:50%; transform:translateX(-50%);
+  width:280px; height:280px; background:linear-gradient(135deg,#a1d4ff,#ff9ee5);
+  border-radius:20px; box-shadow:0 20px 40px rgba(255,105,180,0.4);
+  display:flex; align-items:center; justify-content:center; flex-direction:column;
+}
+
+.lock-icon {
+  width:90px; height:110px; background:#fff; border-radius:15px 15px 5px 5px;
+  position:relative; margin-top:-30px; transition:all 0.4s;
+}
+.lock-icon::after { content:''; position:absolute; left:20px; top:10px; width:50px; height:60px; background:#fff; border-radius:5px; }
+
+.key {
+  position:absolute; top:22%; left:42%; font-size:90px; cursor:grab;
+  transition:all 0.3s; opacity:0; animation:appearKey 1.2s forwards;
+}
+
+.iphone {
+  position:absolute; top:15%; left:65%; width:220px; height:420px;
+  background:#111; border-radius:60px; box-shadow:0 0 30px #fff; opacity:0;
+  transition:opacity 1.5s;
+}
+
+.timer {
+  position:absolute; top:12%; left:50%; transform:translateX(-50%);
+  background:rgba(255,255,255,0.95); padding:12px 30px; border-radius:30px;
+  font-size:28px; box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.iphone-frame { width:100%; height:100%; border-radius:60px; overflow:hidden; background:#000; }
+.iphone-controls { position:absolute; bottom:15px; left:50%; transform:translateX(-50%); display:flex; gap:15px; }
