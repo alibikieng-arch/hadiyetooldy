@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هدیه تولد - جایزه ویژه</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="scene">
+    <div id="cat" class="cat"></div>
+    <div id="giftBox" class="gift-box">
+      <div class="ribbon"></div>
+      <div class="ribbon"></div>
+      <div id="lockIcon" class="lock-icon closed"></div>
+    </div>
+    <div id="key" class="key">🔑</div>
+    <div id="iphone" class="iphone">
+      <div class="iphone-frame">
+        <video id="videoPlayer" controls></video>
+        <div class="iphone-controls">
+          <button onclick="togglePlay()">⏯️</button>
+          <button onclick="changeQuality()">📺</button>
+          <button onclick="uploadVideo()">📤 آپلود ویدیو</button>
+        </div>
+      </div>
+    </div>
+    <div id="timer" class="timer">
+      <div>02</div><div>21</div><div>37</div><div>56</div>
+      <div>Days</div><div>Hours</div><div>Minutes</div><div>Seconds</div>
+    </div>
+    <audio id="bgMusic" loop></audio>
+    <button id="musicToggle" class="music-btn">🎵</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
